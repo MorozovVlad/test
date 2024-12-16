@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap w/ Webpack</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <style></style>
+  <script defer src="main.js"></script></head>
+  <body>
+    <div class="container-fluid py-0 px-0 mx-0">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid px-0">
+          <a class="navbar-brand ms-3" href="#">MySite</a>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <button class="custom-button d-flex ms-5 d-block d-lg-none">
+            <i class="bi bi-telephone-fill me-2"></i>
+          </button>
+          <button
+            class="custom-button me-3 d-block d-lg-none"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            style="
+              background-color: rgb(255, 255, 255);
+              border: 1px solid rgb(194, 193, 193);
+            "
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Главная</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">О нас</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Услуги</a>
+              </li>
+            </ul>
+          </div>
+          <button class="custom-button d-flex ms-auto me-3 d-none d-lg-flex">
+            <i class="bi bi-telephone-fill me-2"></i>
+            <a class="nav-link" href="#">Заказать звонок</a>
+          </button>
+        </div>
+      </nav>
+      <div class="container-fluid p-0 position-relative px-0">
+        <video class="fullscreen-video" autoplay loop muted>
+          <source
+            src="https://gitrequests.github.io/interview-bootstrap/assets/video.mp4"
+            type="video/mp4"
+          />
+          Ваш браузер не поддерживает видео.
+        </video>
+        <div class="video-overlay"></div>
+        <div class="content-container offset-md-2">
+          <div class="col-md-5 text-white">
+            <p class="fs-1 lead">Купить товар с доставкой</p>
+            <p class="fs-4">Официальный поставщик товаров в стране</p>
+          </div>
+          <div class="row mt-auto" style="margin: 0">
+            <div class="col-md-2" style="padding: 0">
+              <button class="custom-button">Заказать звонок</button>
+            </div>
+            <div class="col-md-4 ms-auto text-white me-5">
+              <p>Ваши данные <br />под надежной защитой</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <header class="bg-dark py-2">
+        <div class="container text-center">
+          <h2 class="text-light">Каталог</h2>
+        </div>
+      </header>
+      <div class="col-md-8 offset-md-2" style="padding: 50px 0px">
+        <div class="row" style="margin: 0">
+          <div class="col-12 col-md-4" id="card">
+            <div class="card h-100 shadow">
+              <img
+                src="https://via.placeholder.com/300"
+                class="card-img-top"
+                alt="Товар 1"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Товар 1</h5>
+                <p class="card-text">
+                  Описание товара 1. Это краткое описание товара, которое будет
+                  отображаться под его заголовком.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4" id="card">
+            <div class="card h-100 shadow">
+              <img
+                src="https://via.placeholder.com/300"
+                class="card-img-top"
+                alt="Товар 2"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Товар 2</h5>
+                <p class="card-text">
+                  Описание товара 2. Здесь может быть немного больше текста,
+                  чтобы показать, как карточки будут одинаковой высоты.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4" id="card">
+            <div class="card h-100 shadow">
+              <img
+                src="https://via.placeholder.com/300"
+                class="card-img-top"
+                alt="Товар 3"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Товар 3</h5>
+                <p class="card-text">
+                  Описание товара 3. Это краткое описание товара, которое будет
+                  отображаться под его заголовком.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- </div> -->
+    </div>
+  </body>
+</html>
