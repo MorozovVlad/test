@@ -2,24 +2,55 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bootstrap w/ Webpack</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
-      rel="stylesheet"
-    />
-    <style></style>
-  <script defer src="main.js"></script></head>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Test task</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script defer="defer" src="main.js"></script>
+  </head>
   <body>
     <div class="container-fluid py-0 px-0 mx-0">
       <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="container-fluid px-0">
+          <div
+            class="modal fade"
+            id="callModal"
+            tabindex="-1"
+            aria-labelledby="callModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="callModalLabel">Modal title</h5>
+                </div>
+                <div class="modal-body"><p>...</p></div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="custom-button"
+                    data-bs-dismiss="modal"
+                    style="background-color: blueviolet"
+                  >
+                    Close
+                  </button>
+                  <button type="button" class="custom-button">
+                    Save changes
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
           <a class="navbar-brand ms-3" href="#">MySite</a>
           <div></div>
           <div></div>
           <div></div>
           <div></div>
-          <button class="custom-button d-flex ms-5 d-block d-lg-none">
+          <button
+            class="custom-button d-flex ms-5 d-block d-lg-none"
+            type="button"
+            data-bs-toggle="modal"
+            data-bs-target="#callModal"
+          >
             <i class="bi bi-telephone-fill me-2"></i>
           </button>
           <button
@@ -47,15 +78,15 @@
                   >Главная</a
                 >
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">О нас</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Услуги</a>
-              </li>
+              <li class="nav-item"><a class="nav-link" href="#">О нас</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Услуги</a></li>
             </ul>
           </div>
-          <button class="custom-button d-flex ms-auto me-3 d-none d-lg-flex">
+          <button
+            class="custom-button d-flex ms-auto me-3 d-none d-lg-flex"
+            data-bs-toggle="modal"
+            data-bs-target="#callModal"
+          >
             <i class="bi bi-telephone-fill me-2"></i>
             <a class="nav-link" href="#">Заказать звонок</a>
           </button>
@@ -77,10 +108,17 @@
           </div>
           <div class="row mt-auto" style="margin: 0">
             <div class="col-md-2" style="padding: 0">
-              <button class="custom-button">Заказать звонок</button>
+              <button
+                class="custom-button"
+                style="background-color: blueviolet"
+                data-bs-toggle="modal"
+                data-bs-target="#callModal"
+              >
+                Заказать звонок
+              </button>
             </div>
             <div class="col-md-4 ms-auto text-white me-5">
-              <p>Ваши данные <br />под надежной защитой</p>
+              <p>Ваши данные<br />под надежной защитой</p>
             </div>
           </div>
         </div>
@@ -95,56 +133,61 @@
           <div class="col-12 col-md-4" id="card">
             <div class="card h-100 shadow">
               <img
-                src="https://via.placeholder.com/300"
+                src="https://gitrequests.github.io/interview-bootstrap/assets/image.webp"
                 class="card-img-top"
                 alt="Товар 1"
+                style="height: 200px; object-fit: cover"
               />
               <div class="card-body">
                 <h5 class="card-title">Товар 1</h5>
                 <p class="card-text">
-                  Описание товара 1. Это краткое описание товара, которое будет
-                  отображаться под его заголовком.
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                  Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+                  natoque penatibus et magnis dis parturient montes, nascetur
+                  ridiculus mus.
                 </p>
+              </div>
+              <div class="card-footer text-center mt-auto">
+                <button class="custom-button w-100">Купить</button>
               </div>
             </div>
           </div>
-
           <div class="col-12 col-md-4" id="card">
             <div class="card h-100 shadow">
               <img
-                src="https://via.placeholder.com/300"
+                src="https://gitrequests.github.io/interview-bootstrap/assets/image.webp"
                 class="card-img-top"
                 alt="Товар 2"
+                style="height: 200px; object-fit: cover"
               />
               <div class="card-body">
                 <h5 class="card-title">Товар 2</h5>
-                <p class="card-text">
-                  Описание товара 2. Здесь может быть немного больше текста,
-                  чтобы показать, как карточки будут одинаковой высоты.
-                </p>
+                <p class="card-text"></p>
+              </div>
+              <div class="card-footer text-center mt-auto">
+                <button class="custom-button w-100">Купить</button>
               </div>
             </div>
           </div>
-
           <div class="col-12 col-md-4" id="card">
             <div class="card h-100 shadow">
               <img
-                src="https://via.placeholder.com/300"
+                src="https://gitrequests.github.io/interview-bootstrap/assets/image.webp"
                 class="card-img-top"
                 alt="Товар 3"
+                style="height: 200px; object-fit: cover"
               />
               <div class="card-body">
                 <h5 class="card-title">Товар 3</h5>
-                <p class="card-text">
-                  Описание товара 3. Это краткое описание товара, которое будет
-                  отображаться под его заголовком.
-                </p>
+                <p class="card-text"></p>
+              </div>
+              <div class="card-footer text-center mt-auto">
+                <button class="custom-button w-100">Купить</button>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <!-- </div> -->
     </div>
   </body>
 </html>
